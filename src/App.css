@@ -1,0 +1,37 @@
+
+.form{
+  width: 40%;
+  border: 1px solid orange;
+  margin: auto;
+  margin-top: 10%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: orange;
+  box-shadow: 1px 1px 10px 0px #888888;
+}
+
+
+.text-field input[type="password"],
+.text-field input[type="text"] {
+  height: 30px;
+  margin-bottom: 10px;
+  width: 99%;
+  border: 1px gray;
+  box-shadow: 1px 1px 10px 0px #888888;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.login-button{
+  text-align: center;
+}
+.login-button button {
+  margin: 10px;
+  padding: 10px;
+  width: 180px;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 1px 1px 10px 0px #888888;
+}
