@@ -1,13 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./component/Login";
 import './App.css'
+import Header from "./component/user/Header";
+import BillDashboard from "./component/user/BillDashboard";
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Header />}>
+            <Route index element={<BillDashboard />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

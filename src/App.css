@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto:wght@100&display=swap');
 
 .form{
   width: 40%;
   border: 1px solid orange;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 6%;
   padding: 15px;
   border-radius: 10px;
   background-color: orange;
@@ -11,7 +12,7 @@
 }
 
 
-.text-field input[type="password"],
+/* .text-field input[type="password"],
 .text-field input[type="text"] {
   height: 30px;
   margin-bottom: 10px;
@@ -20,7 +21,7 @@
   box-shadow: 1px 1px 10px 0px #888888;
   margin-top: 10px;
   border-radius: 5px;
-}
+} */
 
 
 .login-button{
@@ -34,4 +35,56 @@
   border-radius: 10px;
   font-size: 18px;
   box-shadow: 1px 1px 10px 0px #888888;
+}
+
+.login-image{
+  height:200px; 
+  width:200px
+}
+
+.header-logo{
+  height:80px; 
+  width:80px
+}
+
+
+.image-div {
+  width: 30%;
+  margin: auto;
+}
+
+
+.login-header-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  color: black;
+  text-align: right;
+}
+
+.navbar{
+  background-color: orange !important;
+}
+
+
+a.nav-link{
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.login-btn,
+.logout-btn{
+  background-color: green;
+    padding: 10px;
+    border: 1px solid green;
+    color: white;
+    border-radius: 10px;
 }
