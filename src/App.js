@@ -3,6 +3,7 @@ import Login from "./component/Login";
 import './App.css'
 import Header from "./component/user/Header";
 import BillDashboard from "./component/user/BillDashboard";
+import 'react-notifications/lib/notifications.css';
 
 
 function App() {

@@ -5,7 +5,7 @@ import Footer from './Footer';
 import logo from '../../assets/images/resto-logo.png'
 export default function Header() {
   const navigate = useNavigate()
-  const onLogout = () =>{
+  const onLogout = () => {
     localStorage.clear()
     navigate('/login')
   }
@@ -22,15 +22,32 @@ export default function Header() {
               <a className="nav-link" href="#">Bill Dashboard <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#">Add Category </a>
+              <div class="dropdown">
+                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+                  Category
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add Category</a>
+                  <a class="dropdown-item" href="#">Category List</a>
+                </div>
+              </div>
+
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#">Add Product </a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+                  Product
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Add Product</a>
+                  <a class="dropdown-item" href="#">Product List</a>
+                </div>
+              </div>
             </li>
           </ul>
-          <span style={{flex:"1"}}></span>
+          <span style={{ flex: "1" }}></span>
           <span class="navbar-text">
-            <button className='logout-btn mx-3' onClick={()=>onLogout()}>Logout</button>
+            <button className='logout-btn mx-3' onClick={() => onLogout()}>Logout</button>
           </span>
         </div>
       </nav>

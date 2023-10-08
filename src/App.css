@@ -88,3 +88,12 @@ a.nav-link{
     color: white;
     border-radius: 10px;
 }
+
+button#dropdownMenuButton {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+}
