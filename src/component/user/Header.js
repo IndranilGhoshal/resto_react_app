@@ -9,6 +9,11 @@ export default function Header() {
     localStorage.clear()
     navigate('/login')
   }
+
+  const goto =(path)=>{
+    navigate(path)
+    navigate(0)
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
@@ -27,8 +32,8 @@ export default function Header() {
                   Category
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Add Category</a>
-                  <a class="dropdown-item" href="#">Category List</a>
+                  <a class="dropdown-item pointer-cursor" onClick={()=>{goto('/add-category')}}>Add Category</a>
+                  <a class="dropdown-item pointer-cursor" onClick={()=>{goto('/category-list')}}>Category List</a>
                 </div>
               </div>
 

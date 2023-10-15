@@ -97,3 +97,7 @@ button#dropdownMenuButton {
   background-color: transparent;
   padding: 8px;
 }
+
+.pointer-cursor{
+  cursor: pointer;
+}
