@@ -80,9 +80,9 @@ export default function AddCategory() {
                 <div className='form-body'>
                     <div className='text-field'>
                         <label>Category Name:</label>
-                        <input type="text" className='form-control' value={name} onChange={(e) => { setName(e.target.value) }} />
+                        <input type="text" className='form-control mt-2' value={name} onChange={(e) => { setName(e.target.value) }} />
                     </div>
-                    <div className='login-button'>
+                    <div className='login-button mt-2'>
                         {
                         isEdit? 
                         <button type="button" className='login-btn' onClick={onEdit} >Save</button>

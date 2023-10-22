@@ -44,8 +44,8 @@ export default function Header() {
                   Product
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Add Product</a>
-                  <a class="dropdown-item" href="#">Product List</a>
+                  <a class="dropdown-item pointer-cursor" onClick={()=>{goto('/add-product')}}>Add Product</a>
+                  <a class="dropdown-item pointer-cursor" onClick={()=>{goto('/product-list')}}>Product List</a>
                 </div>
               </div>
             </li>
@@ -56,8 +56,11 @@ export default function Header() {
           </span>
         </div>
       </nav>
+      <div style={{marginBottom:'5%'}}>
       <Outlet />
 
+      </div>
+      
       <Footer />
     </div>
   )

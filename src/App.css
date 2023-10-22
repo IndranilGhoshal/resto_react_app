@@ -101,3 +101,19 @@ button#dropdownMenuButton {
 .pointer-cursor{
   cursor: pointer;
 }
+
+.img-border {
+  justify-content: space-between;
+  display: flex;
+  /* border: 1px solid black; */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px #888888;
+}
+
+.upload-img {
+  width: 16%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  /* box-shadow: 1px 1px 10px 0px #888888; */
+}
