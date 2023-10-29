@@ -18,7 +18,7 @@ export default function CategoryList() {
     function getCategoryList() {
         getcategoryList({}).then((result) => {
             if (result.data.success) {
-                setCategoryList(result.data.result)
+                setCategoryList(result.data.response)
             } else {
                 setCategoryList([])
             }
